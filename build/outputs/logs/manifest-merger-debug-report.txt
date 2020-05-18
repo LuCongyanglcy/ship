@@ -1,0 +1,205 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:2:1-114:12
+INJECTED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:2:1-114:12
+INJECTED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:2:1-114:12
+INJECTED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:2:1-114:12
+INJECTED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:2:1-114:12
+	package
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:3:5-35
+	android:versionName
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:5:5-30
+		INJECTED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml
+		INJECTED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:4:5-28
+		INJECTED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml
+		INJECTED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml
+uses-sdk
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:9:9-38
+	android:minSdkVersion
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:8:9-35
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:12:5-88
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:12:22-85
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:14:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:15:22-76
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:17:5-95
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:17:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:18:5-92
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:18:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:19:5-95
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:19:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:20:5-92
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:20:22-73
+uses-permission#android.permission.INTERNET
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:22:5-67
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:22:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:23:5-84
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:23:22-65
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:25:5-84
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:25:22-81
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:26:5-81
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:26:22-78
+application
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:27:5-112:19
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:30:9-41
+	android:icon
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:29:9-45
+	android:allowBackup
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:28:9-35
+	android:theme
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:31:9-67
+activity#jiaoxi.crazyit.image.HandDraw
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:33:9-36:20
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:35:13-45
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:34:13-57
+activity#jiaoxi.crazyit.image.SetNetConfig
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:37:9-42:20
+	android:screenOrientation
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:41:13-50
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:40:13-33
+	android:icon
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:39:13-40
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:38:13-61
+activity#jiaoxi.crazyit.image.SetGpsConfig
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:43:9-48:20
+	android:screenOrientation
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:47:13-50
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:46:13-34
+	android:icon
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:45:13-40
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:44:13-61
+activity#jiaoxi.crazyit.image.SetHistoryConfig
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:49:9-54:20
+	android:screenOrientation
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:53:13-50
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:52:13-37
+	android:icon
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:51:13-40
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:50:13-65
+activity#jiaoxi.crazyit.image.CheckCutter
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:55:9-60:20
+	android:screenOrientation
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:59:13-50
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:58:13-33
+	android:icon
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:57:13-40
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:56:13-60
+activity#jiaoxi.crazyit.image.AlarmDatabase
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:61:9-66:20
+	android:screenOrientation
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:65:13-50
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:64:13-33
+	android:icon
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:63:13-40
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:62:13-62
+activity#jiaoxi.crazyit.image.AlarmQuery
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:67:9-72:20
+	android:screenOrientation
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:71:13-50
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:70:13-33
+	android:icon
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:69:13-40
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:68:13-59
+activity#jiaoxi.crazyit.image.SetDecodeActivity
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:73:9-78:20
+	android:screenOrientation
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:77:13-50
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:76:13-33
+	android:icon
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:75:13-40
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:74:13-66
+activity#jiaoxi.crazyit.image.HandDraw1
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:79:9-84:20
+	android:screenOrientation
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:83:13-50
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:82:13-33
+	android:icon
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:81:13-40
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:80:13-58
+service#jiaoxi.crazyit.image.NewMyService
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:86:9-87:19
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:86:18-66
+service#jiaoxi.crazyit.image.HipriService
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:89:9-90:19
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:89:18-66
+activity#jiaoxi.crazyit.image.SeekWindowActivity
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:91:9-97:20
+	android:screenOrientation
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:95:13-50
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:94:13-31
+	android:icon
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:93:13-40
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:92:13-67
+activity#jiaoxi.crazyit.image.OpenHistoryFlie
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:98:9-102:20
+	android:theme
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:100:13-49
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:99:13-64
+activity#jiaoxi.crazyit.image.GateValveActivity
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:103:9-111:20
+	android:label
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:105:13-62
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:104:13-66
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:106:13-110:29
+action#android.intent.action.MAIN
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:107:17-69
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:107:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:109:17-77
+	android:name
+		ADDED from D:\java\Android\test\Ship5014\Ship5014\AndroidManifest.xml:109:27-74

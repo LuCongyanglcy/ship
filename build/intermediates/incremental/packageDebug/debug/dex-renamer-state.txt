@@ -1,0 +1,4 @@
+#Thu May 14 10:07:10 CST 2020
+base.0=D\:\\java\\Android\\test\\Ship5014\\Ship5014\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+path.0=classes.dex
+renamed.0=classes.dex

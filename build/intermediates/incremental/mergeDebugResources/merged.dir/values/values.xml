@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item>Network Config</item>
+        <item>GPS Setting</item>
+        <item>Density Setting</item>
+        <item>Software Manual</item>
+    </string-array>
+    <color name="alarmcolor">#A1A1A1</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">W.S.D</string>
+    <string name="blur">模糊效果</string>
+    <string name="color">画笔颜色</string>
+    <string name="color_blue">蓝色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_red">红色</string>
+    <string name="emboss">浮雕效果</string>
+    <string name="hello">Hello World, HandDraw!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_gate_valve">W.S.D</string>
+    <string name="title_activity_seek_window">SeekWindowActivity</string>
+    <string name="width">画笔宽度</string>
+    <string name="width_1">1像素</string>
+    <string name="width_3">3像素</string>
+    <string name="width_5">5像素</string>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="chat_content_date_style">
+	    <item name="android:minHeight">50dp</item>
+	    <item name="android:gravity">left|center</item>    
+		<item name="android:textColor">#000000</item>   
+		<item name="android:textSize">15sp</item>      
+		<item name="android:lineSpacingExtra">2dp</item>   
+		<item name="android:clickable">true</item>   
+		<item name="android:focusable">true</item>   
+		<item name="android:background">#bfbfbf</item> 
+	</style>
+    <style name="chat_text_date_style">
+	    <item name="android:padding">2dp</item>    
+		<item name="android:textColor">#ffffff</item>   
+		<item name="android:textSize">12sp</item>      
+		<item name="android:background">#bfbfbf</item> 
+	</style>
+    <style name="chat_text_name_style">  
+		<item name="android:textColor">#818181</item>   
+		<item name="android:textSize">15sp</item>      
+		<item name="android:gravity">center</item> 
+	</style>
+</resources>

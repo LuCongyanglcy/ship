@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/exit_layout"
+        android:layout_width="600dp"
+        android:layout_height="500dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#fcfcfc" >
+
+        <jiaoxi.crazyit.classes.history.HistoryListView
+    		    android:id="@+id/datelistView"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="2" 
+    		    android:choiceMode="singleChoice"
+    		    android:scrollbars="none"
+    		    android:divider="@drawable/listitem_divide"
+    		    android:listSelector="#00000000"
+    		    android:background="#e4e3de"
+    		    >
+    	</jiaoxi.crazyit.classes.history.HistoryListView>
+       		    
+        <jiaoxi.crazyit.classes.history.HistoryListView
+       		    android:id="@+id/timeListView"
+       		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content" 
+    		    android:layout_weight="1"
+    		    android:background="#e4e3de"
+    		     >
+       		        
+        </jiaoxi.crazyit.classes.history.HistoryListView> 
+
+    </LinearLayout>

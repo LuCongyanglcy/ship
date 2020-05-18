@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HandDraw!</string>
+    <string-array name="planets_array">
+        <item>Network Config</item>
+        <item>GPS Setting</item>
+        <item>Density Setting</item>
+        <item>Software Manual</item>
+    </string-array>
+    <string name="app_name">W.S.D</string>
+    <string name="width_1">1像素</string>
+    <string name="width_3">3像素</string>
+    <string name="width_5">5像素</string>
+    <string name="color_red">红色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_blue">蓝色</string>
+    <string name="color">画笔颜色</string>
+    <string name="width">画笔宽度</string>
+    <string name="blur">模糊效果</string>
+    <string name="emboss">浮雕效果</string>
+    <string name="title_activity_seek_window">SeekWindowActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_gate_valve">W.S.D</string>
+
+</resources>

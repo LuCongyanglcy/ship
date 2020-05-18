@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jiaoxi.crazyit.image"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- 隐藏下载通知栏显示 -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+     <!-- gps定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>  
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>  
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>  
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <!-- 读写内部存储和sd卡权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        <activity
+            android:name="jiaoxi.crazyit.image.HandDraw"           
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="jiaoxi.crazyit.image.SetNetConfig"
+            android:icon="@drawable/ic"
+            android:label="网络设置"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="jiaoxi.crazyit.image.SetGpsConfig"
+            android:icon="@drawable/ic"
+            android:label="GPS设置"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="jiaoxi.crazyit.image.SetHistoryConfig"
+            android:icon="@drawable/ic"
+            android:label="数据几率回放设置"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="jiaoxi.crazyit.image.CheckCutter"
+            android:icon="@drawable/ic"
+            android:label="校验绞刀"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="jiaoxi.crazyit.image.AlarmDatabase"
+            android:icon="@drawable/ic"
+            android:label="报警记录"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="jiaoxi.crazyit.image.AlarmQuery"
+            android:icon="@drawable/ic"
+            android:label="报警查询"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="jiaoxi.crazyit.image.SetDecodeActivity"
+            android:icon="@drawable/ic"
+            android:label="网络设置"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="jiaoxi.crazyit.image.HandDraw1"
+            android:icon="@drawable/ic"
+            android:label="疏浚界面"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <service android:name="jiaoxi.crazyit.image.NewMyService" >
+        </service>
+
+        <service android:name="jiaoxi.crazyit.image.HipriService" >
+        </service>
+        <activity
+            android:name="jiaoxi.crazyit.image.SeekWindowActivity"
+            android:icon="@drawable/ic"
+            android:label="定位"
+            android:screenOrientation="landscape" >
+         
+        </activity>
+        <activity
+            android:name="jiaoxi.crazyit.image.OpenHistoryFlie" 
+            android:theme="@style/MyDialogStyle" >
+        
+        </activity>
+        <activity
+            android:name="jiaoxi.crazyit.image.GateValveActivity"
+            android:label="@string/title_activity_gate_valve" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

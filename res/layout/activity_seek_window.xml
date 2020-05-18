@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".SeekWindowActivity" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+    </ViewFlipper>
+
+    <!-- <ImageButton
+        android:id="@+id/ibLockRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_lockroute" />
+
+    <ImageButton
+        android:id="@+id/ibLockScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ibLockRoute"
+        android:src="@drawable/ic_lockscale" /> -->
+
+
+    <ImageButton
+        android:id="@+id/ibOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+       
+        android:src="@drawable/ic_origial" />
+    
+    <ImageButton
+        android:id="@+id/ibNorth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ibOriginal"
+        android:src="@drawable/ic_north" />
+    
+   <ImageButton
+        android:id="@+id/ibAutoCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ibNorth"
+        android:src="@drawable/ic_autocenter" />
+    
+	<!-- <ImageButton
+        android:id="@+id/ibDrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ibAutoCenter"
+        android:src="@drawable/ic_drag" /> -->
+	
+	<!-- <ImageButton
+        android:id="@+id/ibsingleScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ibsingleRoute"
+        android:src="@drawable/ic_signalscale" /> -->
+	
+	<ImageButton
+        android:id="@+id/ibImport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ibAutoCenter"
+        android:src="@drawable/ic_internet" />
+
+	<ImageButton
+        android:id="@+id/historyopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@+id/ibImport"
+        android:visibility="gone"
+        android:src="@drawable/historyopen" />
+	
+	<ImageButton
+        android:id="@+id/historystart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/historyopen"
+        android:visibility="gone"
+        android:src="@drawable/start" />
+	<ImageButton
+        android:id="@+id/historypause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/historystart"
+        android:visibility="gone"
+        android:src="@drawable/pause" />
+	
+	<ImageButton
+        android:id="@+id/historystop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/historypause"
+        android:visibility="gone"
+        android:src="@drawable/stop" />
+
+	<ImageButton
+        android:id="@+id/historylast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/seekBar1"
+        android:visibility="gone"
+        android:src="@drawable/last" />
+	<ImageButton
+        android:id="@+id/historynext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/historylast"
+        android:visibility="gone"
+        android:src="@drawable/next" />
+
+	<SeekBar
+	    android:id="@+id/seekBar1"
+	    android:layout_width="460dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/historylast"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@+id/historystop"
+	    android:visibility="gone"
+	    android:paddingTop="12dp" />
+
+	<ImageButton
+		android:id="@+id/ibIFC"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="20dp"
+		android:layout_toRightOf="@+id/ibImport"
+		android:src="@drawable/ic_internetnew" />
+
+	<ImageButton
+		android:id="@+id/ibClear"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="20dp"
+		android:layout_toRightOf="@+id/ibImport"
+		android:src="@drawable/ic_clear" />
+
+</RelativeLayout>

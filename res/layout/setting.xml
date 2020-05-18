@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="280px"
+                    android:layout_height="80px"
+                    android:gravity="center_horizontal"
+                    android:text="水密度(t/m³)"
+                    android:textColor="#000000"
+                    android:textSize="20px" />
+                <EditText
+                    android:id="@+id/et1"
+                    android:layout_width="280px"
+                    android:layout_height="80px"
+                    android:textSize="30px"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="280px"
+                    android:layout_height="80px"
+                    android:gravity="center_horizontal"
+                    android:text="土密度(t/m³)"
+                    android:textColor="#000000"
+                    android:textSize="20px" />
+                <EditText
+                    android:id="@+id/et2"
+                    android:layout_width="280px"
+                    android:layout_height="80px"
+                    android:textSize="30px"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="280px"
+                    android:layout_height="80px"
+                    android:gravity="center_horizontal"
+                    android:text="流量计管径"
+                    android:textColor="#000000"
+                    android:textSize="20px" />
+                <EditText
+                    android:id="@+id/et3"
+                    android:layout_width="280px"
+                    android:layout_height="80px"
+                    android:textSize="30px"/>
+            </TableRow>
+
+
+        </TableLayout>
+        <Button
+            android:id="@+id/btn"
+            android:text="确定"
+            android:textSize="30px"
+            android:textAlignment="center"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"/>
+
+
+    </LinearLayout>
+</ScrollView>
+

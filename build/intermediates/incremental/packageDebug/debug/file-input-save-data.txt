@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu May 14 10:07:10 CST 2020
+0.baseType=DIRECTORY
+0.base=D\:\\java\\Android\\test\\Ship5014\\Ship5014\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+0.path=classes.dex
+0.set=DEX
+count=1
