@@ -84,8 +84,8 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: __local_aars__:D.\java\Android\test\Ship5014\Ship5014\libs\android-support-v4.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:D.\java\Android\test\Ship5014\Ship5014\libs\ant-1.6.5.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:D.\java\Android\test\Ship5014\Ship5014\libs\kryo-2.21-all.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:D.\java\Android\Ship5014\libs\android-support-v4.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:D.\java\Android\Ship5014\libs\ant-1.6.5.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:D.\java\Android\Ship5014\libs\kryo-2.21-all.jar:unspecified@jar" level="project" />
   </component>
 </module>
