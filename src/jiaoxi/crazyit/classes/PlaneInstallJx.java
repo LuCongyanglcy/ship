@@ -2,6 +2,8 @@ package jiaoxi.crazyit.classes;
 
 import java.io.Serializable;
 
+import jiaoxi.crazyit.classes.UISet.DrawShip;
+
 public class PlaneInstallJx implements Serializable{
 
 	/**
@@ -31,7 +33,7 @@ public class PlaneInstallJx implements Serializable{
 		MainStackPivot=new PO_XY();
 		AssitantStack=new PO_XY();
 		ShipPlane=new PO_XY[12];
-		for(int i=0;i<12;i++){
+		for(int i = 0; i< DrawShip.shipArrSize(); i++){
 			ShipPlane[i]=new PO_XY();
 		}
 	}

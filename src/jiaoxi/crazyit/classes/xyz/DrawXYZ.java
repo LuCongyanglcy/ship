@@ -9,6 +9,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.io.RandomAccessFile;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -103,8 +104,8 @@ public class DrawXYZ {
         int seek = 0;
         byte[] s0 = new byte[20];
         byte[] ss = new byte[100];
-        seek = readLine(s, ss, fileLen, seek, 100);
-        int seek0 = 0;
+        seek = readLine(s, ss, fileLen, seek, 100);   //²»¶®Òª¸ÉÂï  27
+        int seek0 = 0;           //10
         seek0 = readBlankData_XYZ(ss, s0, ss.length, seek0, 20);
         double y = Double.parseDouble((new String(s0)).trim());
         strxyz.y.add(y);
@@ -200,7 +201,6 @@ public class DrawXYZ {
 
     public static void DrawXYZToCanvas(Canvas canvas, Str_Xyz strxyz, Rect rect, double centerx, double centery, double x_eve, double y_eve, float filterMax, float filterMin, int[] color, float[] colorDeep, int numOfRGB, boolean colorModel, float angle) {
 
-
         double height = rect.height();
         double width = rect.width();
         int currentColor = Color.rgb(0, 0, 0);
@@ -248,7 +248,6 @@ public class DrawXYZ {
         double oldY = 0;
         List<Float> lz = strxyz.z;
         for (int i = 0; i < len; i++) {
-
 
             iSpace = (int) ((px[i] - oldX) * (px[i] - oldX) + (py[i] - oldY) * (py[i] - oldY));
 

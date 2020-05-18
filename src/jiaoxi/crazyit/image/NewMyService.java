@@ -23,7 +23,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-import jiaoxi.crazyit.image.R;
+import jiaoxi.crazyit.classes.UISet.DrawShip;
 import jiaoxi.crazyit.mygps.OperaMyGps;
 import jiaoxi.crazyit.upload.StreamTool;
 import jiaoxi.crazyit.upload.UploadLogService;
@@ -35,7 +35,6 @@ import jiaoxi.crazyit.classes.IpPort;
 import jiaoxi.crazyit.classes.OperaStrTrochoidReal;
 import jiaoxi.crazyit.classes.OperaTraceLine;
 import jiaoxi.crazyit.classes.PO_XY;
-import jiaoxi.crazyit.classes.PlaneInstall;
 import jiaoxi.crazyit.classes.PlaneInstallJx;
 import jiaoxi.crazyit.classes.Str_Arm_Location;
 import jiaoxi.crazyit.classes.Str_RealTimeSignal;
@@ -63,25 +62,18 @@ import android.app.DownloadManager;
 import android.app.DownloadManager.Request;
 import android.app.Notification;
 import android.app.PendingIntent;
-import android.app.ProgressDialog;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Binder;
 import android.os.Environment;
-import android.os.Handler;
 import android.os.IBinder;
-import android.os.Message;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
-import android.os.StrictMode.VmPolicy;
 import android.os.Process;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class NewMyService extends Service {
@@ -375,11 +367,12 @@ public class NewMyService extends Service {
 		BasePoint_Plane.z = (float) strRealTimeSignal.GPS_Z;
 		BasePoint_Install = planeInstall.gps1;		////等于GPS安装点
 
-		for (i=0;i<12;i++){
+		for (i=0;i<DrawShip.shipArrSize();i++){
 			strShipPoint.ShipPlane[i].x=(float) (BasePoint_Plane.x+(planeInstall.ShipPlane[i].x-BasePoint_Install.x)*Math.cos(strRealTimeSignal.ShipAngle)
 					-(planeInstall.ShipPlane[i].y-BasePoint_Install.y)*Math.sin(strRealTimeSignal.ShipAngle));
 			strShipPoint.ShipPlane[i].y=(float) (BasePoint_Plane.y+(planeInstall.ShipPlane[i].x-BasePoint_Install.x)*Math.sin(strRealTimeSignal.ShipAngle)
 					+(planeInstall.ShipPlane[i].y-BasePoint_Install.y)*Math.cos(strRealTimeSignal.ShipAngle));
+
 		}
 
 		strShipPoint.VirtualGPSPoint[0]=BasePoint_Plane.x+(planeInstall.gps1.x-BasePoint_Install.x)*Math.cos(strRealTimeSignal.ShipAngle)
@@ -1097,7 +1090,7 @@ public class NewMyService extends Service {
 		}
 	}
 	/////////读取xyz文件
-	public void readXYZ(String path){
+	public void readXYZ(String path){     //读取XYZ file
 		DrawXYZ dx=new DrawXYZ();
 		dx.readXYZFile(path, xyzs);
 
@@ -1577,36 +1570,12 @@ public class NewMyService extends Service {
 			pin.MainStackPivot.y=9.1f;
 			pin.AssitantStack.x=-1.38f;
 			pin.AssitantStack.y=14.1f;
-			pin.Trunnion.x=60.9f;
-			pin.Trunnion.y=9.1f;
 			pin.Winch_Left.x=93.829f;
 			pin.Winch_Left.y=5.5f;
 			pin.Winch_Right.x=93.829f;
 			pin.Winch_Right.y=12.7f;
-			pin.ShipPlane[0].x=86.1f;
-			pin.ShipPlane[0].y=0f;
-			pin.ShipPlane[1].x=0f;
-			pin.ShipPlane[1].y=0f;
-			pin.ShipPlane[2].x=0f;
-			pin.ShipPlane[2].y=6.6f;
-			pin.ShipPlane[3].x=13.1f;
-			pin.ShipPlane[3].y=6.6f;
-			pin.ShipPlane[4].x=13.1f;
-			pin.ShipPlane[4].y=11.6f;
-			pin.ShipPlane[5].x=0f;
-			pin.ShipPlane[5].y=11.6f;
-			pin.ShipPlane[6].x=0f;
-			pin.ShipPlane[6].y=18.2f;
-			pin.ShipPlane[7].x=86.1f;
-			pin.ShipPlane[7].y=18.2f;
-			pin.ShipPlane[8].x=86.1f;
-			pin.ShipPlane[8].y=12.6f;
-			pin.ShipPlane[9].x=57.4f;
-			pin.ShipPlane[9].y=12.6f;
-			pin.ShipPlane[10].x=57.4f;
-			pin.ShipPlane[10].y=5.6f;
-			pin.ShipPlane[11].x=86.1f;
-			pin.ShipPlane[11].y=5.6f;
+			DrawShip drawShip=new DrawShip();
+			drawShip.drawShip(pin,sdPath+"/project/ship.txt");
 			pin.ShipAngleFrom=1;
 			pin.SeekType=0;
 			/*pin.gps1.x=108.85f;
@@ -1666,8 +1635,6 @@ public class NewMyService extends Service {
 			pin.bUseGps2BackGps1=false;
 			pin.bShowZX=false;*/
 		}
-
-
 		return pin;
 	}
 

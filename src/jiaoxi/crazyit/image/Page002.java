@@ -24,15 +24,7 @@ public class Page002 {
 		//////////////////////////////////////////////////////////////////////////////////
 		Paint paint = new Paint();
 		//下面说明中    电磁阀失电
-		GroupSolenoidValve.SolenoidValve0[0].cx =240+300-100;//不配信号
-		GroupSolenoidValve.SolenoidValve0[0].cy = 1570;
-		GroupSolenoidValve.SolenoidValve0[0].rectWidth = 48;
-		GroupSolenoidValve.SolenoidValve0[0].rectHeight = 44;
-		GroupSolenoidValve.SolenoidValve0[0].blink_sign = false;
-		GroupSolenoidValve.SolenoidValve0[0].electricity =true;  //电磁阀得电
-		GroupSolenoidValve.SolenoidValve0[0].conditional_electricity = false;  //电磁阀有条件得电
-		GroupSolenoidValve.SolenoidValve0[0].adjustable = false;  //电磁阀有条件得电
-		GroupSolenoidValve.SolenoidValve0[0].drawGraph(canvas);
+
 		//下面说明中    电磁铁有条件得电
 		GroupSolenoidValve.SolenoidValve0[1].cx =520+300;//不配信号
 		GroupSolenoidValve.SolenoidValve0[1].cy = 1570;

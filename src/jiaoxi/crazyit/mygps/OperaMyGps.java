@@ -64,6 +64,7 @@ public class OperaMyGps {
 			bearing=location.getBearing();*/
 			locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 0, locationListener);
 			locationManager.addGpsStatusListener(statusListener);
+			System.out.println("location:"+location.getLatitude()+"\t"+location.getLongitude()+"\t"+location.getBearing());
 		}
 	}
 	/////////gps监听事件

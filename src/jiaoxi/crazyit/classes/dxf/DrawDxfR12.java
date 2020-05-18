@@ -387,6 +387,7 @@ public class DrawDxfR12 {
         Dxf_r12 r12 = new Dxf_r12();
 
         File file = new File(fileName);
+        System.out.println(fileName);
         InputStream in = null;
 
         byte[] s0 = new byte[30];

@@ -842,7 +842,6 @@ public class GateValveActivity extends Activity implements OnGestureListener {
 		String con0 = " ";
 		switch (bId) {
 		case 000:
-
 			s = 1;
 			if (((GroupHDPump.hdpump[s].cx - 60) < xInScreen && xInScreen < (GroupHDPump.hdpump[s].cx + 60))
 					&& ((GroupHDPump.hdpump[s].cy - 60) < yInScreen && yInScreen < (GroupHDPump.hdpump[s].cy + 60))) {

@@ -42,7 +42,7 @@ public class AndroidDredgActivity extends Activity {
 		@Override
 		public void onServiceDisconnected(ComponentName name) {
 			// TODO Auto-generated method stub
-			
+			System.out.println("doisconnected");
 		}
 		
 		@Override

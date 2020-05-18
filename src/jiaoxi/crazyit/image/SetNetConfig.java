@@ -57,6 +57,7 @@ public class SetNetConfig extends Activity {
 			// TODO Auto-generated method stub
 			myBinder=(NewMyService.MyBinder)service;
 			config=myBinder.getNetConfig();
+			System.out.println("lu:"+config);
 			handler.sendMessage(Message.obtain(handler,1));
 		}
 	};

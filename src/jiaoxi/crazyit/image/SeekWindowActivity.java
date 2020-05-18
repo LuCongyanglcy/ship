@@ -1,38 +1,28 @@
 package jiaoxi.crazyit.image;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.net.ServerSocket;
-import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.zip.ZipException;
 
 import org.apache.tools.zip.ZipEntry;
 import org.apache.tools.zip.ZipFile;
-import org.apache.tools.zip.ZipOutputStream;
 
 import jiaoxi.crazyit.classes.Density;
-import jiaoxi.crazyit.classes.xyz.OperaColor;
-import jiaoxi.crazyit.image.R;
+import jiaoxi.crazyit.classes.UISet.DrawShip;
 import jiaoxi.crazyit.brightness.BrightnessTools;
 import jiaoxi.crazyit.classes.Caculate;
-import jiaoxi.crazyit.classes.IpPort;
-import jiaoxi.crazyit.classes.PlaneInstall;
 import jiaoxi.crazyit.classes.PlaneInstallJx;
 import jiaoxi.crazyit.classes.Str_RealTimeSignal;
 import jiaoxi.crazyit.classes.Str_Ship_Point;
@@ -47,11 +37,8 @@ import jiaoxi.crazyit.classes.history.HistoryParam;
 import jiaoxi.crazyit.classes.xyz.DrawXYZ;
 import jiaoxi.crazyit.classes.xyz.Str_Colors;
 import jiaoxi.crazyit.classes.xyz.Str_Xyz;
-import jiaoxi.crazyit.image.NewMyService.MyBinder;
 import jiaoxi.crazyit.decode.ClientSocket;
 
-import android.R.layout;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -66,20 +53,15 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.graphics.Bitmap;
-import android.graphics.Bitmap.Config;
-import android.graphics.Paint.Style;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.graphics.Point;
 import android.graphics.PointF;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.util.FloatMath;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -89,7 +71,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.MotionEvent;
 import android.view.View.OnClickListener;
@@ -103,8 +84,6 @@ import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.PopupWindow;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
-import android.widget.SlidingDrawer;
-import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
@@ -977,7 +956,7 @@ public class SeekWindowActivity extends Activity implements OnGestureListener {
 
 
         float x9 = 0, x10 = 0, y9 = 0, y10 = 0;
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < DrawShip.shipArrSize(); i++) {
             px[i] = pox + (strShipPoint.ShipPlane[i].y - centery) * sX;
             py[i] = poy - (strShipPoint.ShipPlane[i].x - centerx) * sY;
             if (i == 9) {
@@ -996,7 +975,7 @@ public class SeekWindowActivity extends Activity implements OnGestureListener {
 
         Path path = new Path();
         path.moveTo(px[0], py[0]);
-        for (int i = 1; i < 12; i++) {
+        for (int i = 1; i < DrawShip.shipArrSize(); i++) {
             path.lineTo(px[i], py[i]);
         }
         path.close();
@@ -1335,7 +1314,8 @@ public class SeekWindowActivity extends Activity implements OnGestureListener {
                     String[] arrayDeepString = deepString.split(",");
                     int num = Integer.parseInt(arrayDeepString[0]);
                     for (int i = 3; i < num * 5; i += 5) {
-                        if (arrayDeepString[i].substring(arrayDeepString[i].length() - 3).equals("XYZ") || arrayDeepString[i].substring(arrayDeepString[i].length() - 3).equals("xyz")) {
+                        if (arrayDeepString[i].substring(arrayDeepString[i].length() - 3).equals("XYZ") ||
+                                arrayDeepString[i].substring(arrayDeepString[i].length() - 3).equals("xyz")) {
                             String fileName = path + arrayDeepString[i].replace("\r\n", "");
                             File ff = new File(fileName);
                             if (ff.exists()) {
@@ -1751,7 +1731,6 @@ public class SeekWindowActivity extends Activity implements OnGestureListener {
 
     public boolean onTouch(MotionEvent event) {
         // TODO 自动生成的方法存根
-
         switch (event.getAction() & MotionEvent.ACTION_MASK) {
             case MotionEvent.ACTION_DOWN:
                 float mX = event.getX();
@@ -1780,7 +1759,6 @@ public class SeekWindowActivity extends Activity implements OnGestureListener {
                     }
 
                 }
-
                 break;
             case MotionEvent.ACTION_POINTER_DOWN:
                 int pointerCount = event.getPointerCount();

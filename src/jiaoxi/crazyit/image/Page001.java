@@ -17,7 +17,6 @@ import jiaoxi.crazyit.classes.Density;
 public class Page001 {
 
 	public static void DrawPage(Canvas canvas) {
-
 //		if (GateValveActivity.control_limite) {
 //			canvas.drawBitmap(GateValveActivity.bmp11, 2150, 70, null);
 //		} else {
@@ -42,15 +41,14 @@ public class Page001 {
 		GroupBucketWheel.bucketwheel[0].cy=420;
 		GroupBucketWheel.bucketwheel[0].run=true;
 		GroupBucketWheel.bucketwheel[0].reversal=true;
-//		GroupBucketWheel.bucketwheel[0].drawGraph(canvas);
-		
-		
+		GroupBucketWheel.bucketwheel[0].drawGraph(canvas);
+
 		
 		//绞刀头
 		GroupCutterWheel.cutterwheel.cx = 240;
 		GroupCutterWheel.cutterwheel.cy = 420;
 		GroupCutterWheel.cutterwheel.rectHeight = 200;
-		GroupCutterWheel.cutterwheel.rectWidth = 200;	
+		GroupCutterWheel.cutterwheel.rectWidth = 200;
 		GroupCutterWheel.cutterwheel.drawGraph(canvas);
         //桥架		
 		GroupCutter2.cutter2.cx = 20;
